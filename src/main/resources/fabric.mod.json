@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "kapibaramod",
+	"version": "${version}",
+	"name": "Kapibara Mod",
+	"description": "This is a Kapibara Mod made by Mechalina",
+	"authors": [
+		"Mechalina"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/kapibaramod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mechalina.kapibaramod.KapibaraMod"
+		],
+		"client": [
+			"net.mechalina.kapibaramod.KapibaraModClient"
+		],
+		"fabric-datagen": [
+			"net.mechalina.kapibaramod.KapibaraModDataGenerator"
+		]
+	},
+	"mixins": [
+		"kapibaramod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
