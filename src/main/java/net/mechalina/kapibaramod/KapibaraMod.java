@@ -2,6 +2,8 @@ package net.mechalina.kapibaramod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mechalina.kapibaramod.block.ModBlocks;
+import net.mechalina.kapibaramod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class KapibaraMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
