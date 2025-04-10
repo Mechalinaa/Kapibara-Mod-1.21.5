@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kapibaramod:item/orange"
+    "layer0": "kapibaramod:item/orange_fruit"
   }
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mechalina.kapibaramod.KapibaraMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -17,7 +18,8 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block ORANGE_WOOD_BLOCK = registerBlock("orange_wood_block",
-            AbstractBlock.Settings.create().strength(4f).sounds(BlockSoundGroup.WOOD));
+            AbstractBlock.Settings.copy(Blocks.OAK_WOOD));
+
 
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings){
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(KapibaraMod.MOD_ID, name));

@@ -1,6 +1,6 @@
 {
   "model": {
     "type" : "minecraft:model",
-    "model": "kapibaramod:item/orange"
+    "model": "kapibaramod:item/orange_fruit"
   }
 }

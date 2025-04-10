@@ -12,8 +12,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item ORANGE=registerItem("orange",new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,
-            Identifier.of(KapibaraMod.MOD_ID,"orange")))));
+    public static final Item ORANGE_FRUIT=registerItem("orange_fruit",new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(KapibaraMod.MOD_ID,"orange_fruit")))));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(KapibaraMod.MOD_ID, name), item);
@@ -23,7 +23,7 @@ public class ModItems {
         KapibaraMod.LOGGER.info("Registering Mod Items for "+KapibaraMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
-            entries.add(ORANGE);
+            entries.add(ORANGE_FRUIT);
         });
 
     }
